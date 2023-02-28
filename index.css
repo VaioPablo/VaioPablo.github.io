@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    
+    scroll-behavior: smooth;
+}
+
+button{
+   
+     font-family: 'Work Sans';
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #1CB698;
+    
+    
+}
+
+button:hover{
+    background-color: rgb(104, 32, 170);
+}
+.conteiner{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* MENU */
+
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* INICIO */
+
+#inicio{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 68vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Pablo.jfif");
+}
+
+
+
+/* SOBRE MI */
+
+.Sobre { 
+    background-color:#1e2326;
+    padding: 140px 0 100px 0;
+    text-align: center;
+    justify-content: center;   
+}
+
+.Sobre .contenido-seccion h1 {
+    font-size: 40px;
+    color: #bab9b9;
+}
+
+.Sobre .contenido-seccion .foto {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Sobre .contenido-seccion .foto img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 8px solid  #1CB698 ;
+}
+
+.Sobre .col h2 {
+    font-size: 30px;
+    color: #bab9b9;
+}
+
+
+    
+/* SECCION ESTUDIOS */
+
+.estudios{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.estudios .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.estudios .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.estudios .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.estudios .contenido-seccion .info .col{
+    width: 45%;
+}
+.estudios .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: #940253;
+    font-weight: bold;
+    border: 2px solid #940253;
+    padding: 10px;
+
+}
+.estudios .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.estudios .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+.estudios .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.estudios .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.estudios .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
+.estudios .contenido-seccion .info .col table .lugar{
+    display: block;
+    color: #940253;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.estudios .contenido-seccion .info .col table .descripcion{
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;
+}
+
+a { 
+    font-family: 'Work Sans';
+    font-size: 1em;
+    color: white;
+}
+
+/* SECCION E. LABORAL */
+
+.elaboral{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.elaboral .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.elaboral .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.elaboral .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.elaboral .contenido-seccion .info .col{
+    width: 80%;
+}
+.elaboral .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: #940253;
+    font-weight: bold;
+    border: 2px solid #940253;
+    padding: 10px;
+
+}
+.elaboral .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.elaboral .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+.elaboral .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.elaboral .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.elaboral .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
+.elaboral .contenido-seccion .info .col table .lugar{
+    display: block;
+    color: #940253;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.elaboral .contenido-seccion .info .col table .descripcion{
+    border-left: 1px solid #bab9b9;
+    padding-left: 30px;
+}
+
+a { 
+    font-family: 'Work Sans';
+    font-size: 1em;
+    color: white;
+}
+
+
+
+
+
+/* CERTIFICADOS */
+
+.certificados {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.certificados .titulo h1 { 
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+.certificados p{
+    font-size: 20px;
+}
+
+.imagen {
+    width: 500px;
+    height: 350px;
+    margin:15px 15px;
+    border-radius: 15px;
+}
+
+.card{ 
+    text-align: center;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    border-radius: 15px;
+    margin: 0 15px;
+}
+
+.card h1 {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.card{
+    transition: transform 1s;
+}
+.card :hover {
+    transform: scale(1.4);
+}
+.certificados .elementos .card h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #e6e6e6;
+}
+
+.elementos :hover {
+    background-color: #1CB698;
+    
+}
+
+
+
+
+
+/* CONTACTO */
+
+
+.contacto { 
+    background-color: #1e2326;
+    color: rgb(199, 201, 202);
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+h2 { text-align: center;
+    font-family: 'Work Sans';
+    margin: 5px 0px;
+    font-size: 2rem;
+   }
+h3 { text-align: center;
+    font-family: 'Work Sans';
+    margin: 5px 0px;
+    font-size: 1.3rem;
+   }
+
+
+
+
+
+/* FOOTER REDES */
+
+
+ footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;}
+
+    footer .redes{
+        margin-bottom: 20px;
+    }
+    footer .redes a{
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        margin: 40px 5px;
+        font-size: 20px;
+        transition: .3s;
+    }
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
+/* SECCION RESPONSIVE */
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
